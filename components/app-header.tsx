@@ -108,7 +108,7 @@ export function AppHeader({ onSidebarToggle }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-40 flex h-16 items-center justify-between gap-4 border-b border-border bg-card px-4 md:px-6">
-      <div className="flex items-center gap-4 flex-1">
+      <div className="flex items-center gap-4 sm:flex-1">
         <Button variant="ghost" size="icon" className="md:hidden" onClick={onSidebarToggle} aria-label="Toggle sidebar">
           <Menu className="h-5 w-5" />
         </Button>
@@ -118,7 +118,7 @@ export function AppHeader({ onSidebarToggle }: HeaderProps) {
         </div>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 max-sm:flex-1">
         <div className="relative max-w-sm w-full">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
@@ -126,7 +126,7 @@ export function AppHeader({ onSidebarToggle }: HeaderProps) {
             placeholder="Search..."
             value={searchValue}
             onChange={(e) => handleSearch(e.target.value)}
-            className="pl-9 bg-background border-border"
+            className="pl-9 bg-background border-border max-sm:text-xs max-sm:placeholder:text-xs"
           />
         </div>
 

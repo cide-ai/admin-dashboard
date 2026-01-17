@@ -1,0 +1,14 @@
+export const TOKEN_KEY = 'token';
+
+export const OtpType = {
+  EMAIL_VERIFICATION: 'EMAIL_VERIFICATION',
+  PHONE_VERIFICATION: 'PHONE_VERIFICATION',
+  PASSWORD_RESET: 'PASSWORD_RESET',
+  LOGIN_VERIFICATION: 'LOGIN_VERIFICATION',
+  TWO_FACTOR_AUTH: 'TWO_FACTOR_AUTH',
+} as const;
+
+export const OtpChannel = {
+  EMAIL: 'EMAIL',
+  SMS: 'SMS',
+} as const;
